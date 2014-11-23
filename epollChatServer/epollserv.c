@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 
 void* epoll(void *arg)
 {
-    int sockArray[2];
+    int sockArray[EPOLL_SIZE];
     int userNum = 0;
     char inputBuf[BUF_SIZE];
     socklen_t adr_sz;
